@@ -3,7 +3,7 @@ import streamlit as st
 import openai
 
 # Streamlit Community Cloudの「Secrets」からOpenAI API Keyを取得
-openai.api_key = st.secret.OpenAIAPI.openai_api_key
+openai.api_key = st.secrets.OpenAIAPI.openai_api_key
 
 system_prompt = """
 あなたは優秀な英語講師です。
